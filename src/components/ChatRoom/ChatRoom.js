@@ -3,6 +3,7 @@ import queryString from "query-string";
 import io from "socket.io-client";
 import InfoBar from "../InfoBar/InfoBar";
 import MessageInput from "../MessageInput/MessageInput";
+import Messages from "../Messages/Messages";
 import "./ChatRoom.css";
 
 let socket;
@@ -72,6 +73,7 @@ export default function ChatRoom({ location }) {
     <div className="outerContainer">
       <div className="container">
         <InfoBar room={room} />
+        <Messages messages={messages} name={name} />
         <MessageInput
           message={message}
           setMessage={setMessage}
