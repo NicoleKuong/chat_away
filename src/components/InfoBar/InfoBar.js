@@ -6,13 +6,13 @@ import "./InfoBar.css";
 const InfoBar = (props) => (
   <div className="infoBar">
     <div className="leftInnerContainer">
-      <img className="onlineIcon" src={onlineIcon} alt="online image" />
+      <img className="onlineIcon" src={onlineIcon} alt="online" />
       <h3>{props.room}</h3>
     </div>
     <div className="rightInnerContainer">
       {/* refresh the page so that the user will leave the chat room */}
       <a href="/">
-        <img src={closeIcon} alt="close image" />
+        <img src={closeIcon} alt="close" />
       </a>
     </div>
   </div>
