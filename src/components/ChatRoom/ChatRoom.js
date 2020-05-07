@@ -5,6 +5,7 @@ import InfoBar from "../InfoBar/InfoBar";
 import MessageInput from "../MessageInput/MessageInput";
 import Messages from "../Messages/Messages";
 import "./ChatRoom.css";
+import ActiveUser from "../ActiveUser/ActiveUser";
 
 let socket;
 
@@ -15,6 +16,7 @@ export default function ChatRoom({ location }) {
   const [message, setMessage] = useState("");
   //all messages
   const [messages, setMessages] = useState([]);
+  const [users, setUsers] = useState("");
 
   const ENDPOINT = "localhost:4000";
 
@@ -80,6 +82,7 @@ export default function ChatRoom({ location }) {
           sendMessage={sendMessage}
         />
       </div>
+      <ActiveUser users={users} />
     </div>
   );
 }
