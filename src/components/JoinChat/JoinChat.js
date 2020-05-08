@@ -19,8 +19,13 @@ export default function JoinChat() {
 
   return (
     <div className="joinOuterContainer">
+      <div className="outerHeading">
+        <h1>Chat Away</h1>
+        <h3>Real Time Messaging Application</h3>
+      </div>
       <div className="joinInnerContainer">
-        <h1 className="heading">Join</h1>
+        <h2 className="heading">Join</h2>
+
         <input
           placeholder="enter name"
           className="joinInput"
