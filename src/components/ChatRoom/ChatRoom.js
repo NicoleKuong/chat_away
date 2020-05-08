@@ -18,7 +18,7 @@ export default function ChatRoom({ location }) {
   const [messages, setMessages] = useState([]);
   const [users, setUsers] = useState("");
 
-  const ENDPOINT = "localhost:4000";
+  const ENDPOINT = "https://chat-away-server.herokuapp.com/";
 
   useEffect(() => {
     //get the data that user enterd when joined the chat
